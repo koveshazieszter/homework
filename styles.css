@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+header {
+
+    background-color: #333333;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ol,
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+li {
+    font-size: 1.5rem;
+    float: right;
+}
+li a {
+    color: white;
+    text-align: center;
+    padding: 18px 33.7px;
+    text-decoration: none;
+    float: right;
+}
+li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #333333;
+}
+header li a.active {
+    background-color: #ff0099;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html,
+body {
+    font-family: 'Courier';
+
+}
+body {
+    background-image: url('assets/topography.png');
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.2rem;
+    overflow-x: hidden;
+}
+a,
+h2 {
+    color: #ff0099;
+}
+div,
+a,
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 16%;
+    float: right;
+    font-size: 3.1rem;
+    color: white;
+    text-shadow: -2px -1px #666666;
+}
+div.after::after {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 1px;
+    border-bottom: 2px dashed black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    left: 47.6%;
+    margin-top: 5rem;
+}
+div.after {
+    position: relative;
+    margin-top: 0.5rem;
+}
+h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    padding-bottom: 5px;
+}
+a {
+    position: relative;
+}
+p {
+    line-height: 2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-top: 1.5rem;
+}
+h2#top {
+    margin-top: 3rem;
+}
+section {
+    float: left;
+    margin: 0 1.5%;
+    width: 63%;
+}
+article {
+    z-index: -1;
+    position: relative;
+    top: 15%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+img {
+    position: relative;
+    position: fixed;
+}
+img#montain {
+    margin-left: 14rem;
+    background-size: cover;
+    z-index: -1;
+    width: 70vw;
+    height: 100vh;
+    float: right;
+    opacity: 0.8;
+}
+img#logo {
+    z-index: 1;
+    width: 50px;
+    padding: 0.3rem 1.5rem 1.5rem 14rem;
+    background-size: cover;
+    float: left;
+}
+div .full {
+    padding-top: 3rem;
+}
