@@ -91,6 +91,9 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
+* {
+    box-sizing: border-box;
+  }
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -108,16 +111,13 @@ section {
 body {
     line-height: 1;
 }
-header {
-
-    background-color: #333333;
-}
-.navbar {
+.navbar  {
+    z-index: -1;
     overflow: hidden;
     background-color: #333;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100%; 
 }
 ol,
 ul {
@@ -130,11 +130,12 @@ ul {
 li {
     font-size: 1.5rem;
     float: right;
+
 }
 li a {
     color: white;
     text-align: center;
-    padding: 18px 33.7px;
+    padding:18px 41px;
     text-decoration: none;
     float: right;
 }
@@ -163,15 +164,11 @@ table {
 html,
 body {
     font-family: 'Courier';
-
 }
 body {
-    background-image: url('assets/topography.png');
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
     font-size: 1.2rem;
     overflow-x: hidden;
 }
@@ -185,23 +182,26 @@ h2 {
     font-family: 'Open Sans', sans-serif;
 }
 h1 {
+    display: inline-block;
     font-family: 'Source Sans Pro', sans-serif;
     padding-top: 16%;
+    font-size: 2.7rem;
+    color: #444444;
     float: right;
-    font-size: 3.1rem;
     color: white;
-    text-shadow: -2px -1px #666666;
-}
+    margin-right: -30px;
+    overflow: hidden;
+} 
 div.after::after {
     display: block;
     content: '';
-    width: 50px;
+    width: 30px;
     height: 1px;
     border-bottom: 2px dashed black;
     position: absolute;
     bottom: 0;
     left: 0;
-    left: 47.6%;
+    left: 48.6%;
     margin-top: 5rem;
 }
 div.after {
@@ -222,7 +222,7 @@ p {
     line-height: 2rem;
     font-size: 0.9rem;
     font-weight: 400;
-    padding-top: 1.5rem;
+    padding-top: 1.5rem;  
 }
 h2#top {
     margin-top: 3rem;
@@ -233,7 +233,7 @@ section {
     width: 63%;
 }
 article {
-    z-index: -1;
+    z-index: -99;
     position: relative;
     top: 15%;
     left: 50%;
@@ -250,21 +250,153 @@ img {
     position: fixed;
 }
 img#montain {
-    margin-left: 14rem;
-    background-size: cover;
-    z-index: -1;
-    width: 70vw;
+    margin-left: 10.6rem;
+    background-size:cover;
+    z-index: -99;
+    width: 65vh;
     height: 100vh;
-    float: right;
-    opacity: 0.8;
+    right:0;
+    background-attachment: fixed;
 }
 img#logo {
-    z-index: 1;
-    width: 50px;
-    padding: 0.3rem 1.5rem 1.5rem 14rem;
+    
+    width: 100px;
+    padding-left:3rem;
+    top: 0.3rem; 
     background-size: cover;
     float: left;
+    color:white;
 }
 div .full {
+   
     padding-top: 3rem;
 }
+article#concepts section{
+    background-image: url('assets/topography.png');
+    height:100vh ;
+}
+p#aboutme{
+    position: relative;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    float: right;
+    color: white;
+    width: 24%;
+    text-align: center;   
+}
+p{
+    color:#666666;
+    font-size: 1rem;
+}
+#position{
+    position: relative;
+}
+span{
+    color: #ff0099;
+}
+@media screen and (max-width: 1770px) {
+   h1{font-size: 2.5rem;} 
+   p#aboutme{font-size: 1.3rem;}
+}
+@media screen and (max-width: 1422px) {
+    #montain{
+        visibility: hidden;
+    }
+    article{
+    z-index: 99;
+    position: relative;
+    top: 15%;
+    left: 64%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 96%;
+    height: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    }
+    article#concepts section{
+        background-image: none;
+        background-position: cover;
+        background-size: cover;
+        height:100vh ;
+        left: 190%;
+    }
+    article#concepts{
+        right: 0;
+    }
+    body{
+        background-image: url('assets/topography.png');
+        height:100vh;
+        width: 100vw;
+    }
+    header{
+       /* background-image: url(assets/treebackground.jpg);
+        background-position: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:100vh;
+       width: 100vh;
+    }*/
+    background-image: url(assets/pexels-michał-osiński-3454270.jpg),
+    linear-gradient(147deg,  #353535 0%,  #d7d7d7 74%); 
+    position: relative;
+    height: 30vw;
+    background-size:cover;
+    background-position:24% 20% ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center; 
+}
+   h1{ 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.7rem;
+    padding-top:24%;
+    color: #666666;
+   }
+
+   p#aboutme{
+   color:#666666;
+   font-weight: 200;
+   position: relative;
+   display: inline-block;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 300;
+   font-size: 1.4rem;
+   font-family: 'Source Sans Pro', sans-serif;
+   left:  40%;
+   padding-top:30%;
+   width: 40%;
+   color:#ff0099;
+   text-align: center; }
+
+    #position{
+        position: relative;
+        left:0;
+    }
+    article#montainWidth{
+        display: inline-block;
+        left: 1%;
+        top:-1100px;   
+    }
+    .navbar{
+        z-index: 99999;
+    }
+    img#logo { z-index: 999999;
+    }
+        
+    
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+      color: white;
+    }
+    
+  }
